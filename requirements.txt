@@ -1,0 +1,43 @@
+# ══════════════════════════════════════════════════════════════
+# requirements.txt - Python Package Dependencies
+# ══════════════════════════════════════════════════════════════
+# Install all at once with:
+#   pip install -r requirements.txt
+#
+# Windows setup (Python 3.13+):
+#   1. pip install -r requirements.txt   (PyAudio 0.2.14+ has Windows wheels)
+#   2. If PyTorch DLL error: install VC++ 2022 Redistributable from
+#      https://aka.ms/vs/17/release/vc_redist.x64.exe
+# ══════════════════════════════════════════════════════════════
+
+# ── CORE: Speech Recognition ──────────────────────────────────
+# OpenAI Whisper: Multilingual speech-to-text model
+# Supports Hindi natively, runs fully OFFLINE on device
+# Auto-downloads model weights on first run (~145MB for 'base')
+# GitHub: https://github.com/openai/whisper
+openai-whisper>=20231117
+
+# ── CORE: Audio Capture ───────────────────────────────────────
+# PyAudio: Python bindings for PortAudio (cross-platform audio)
+# Used to open microphone input stream and record audio chunks
+# Windows note: use 'pipwin install pyaudio' if pip fails
+PyAudio>=0.2.11
+
+# ── CORE: Numerical Computing ─────────────────────────────────
+# NumPy: Array operations (used internally by Whisper and PyAudio)
+numpy>=1.24.0
+
+# ── CORE: Deep Learning Inference (Required by Whisper) ───────
+# PyTorch: Neural network framework that runs the Whisper model
+# CPU-only version is sufficient (no GPU needed for 'base' model)
+# Whisper installs this automatically, listed here for clarity
+torch>=2.0.0
+
+# ── HARDWARE: Raspberry Pi GPIO (RPi ONLY) ────────────────────
+# Uncomment the line below ONLY when deploying to Raspberry Pi.
+# On Windows/Mac this library does not exist — leave commented.
+# RPi.GPIO>=0.7.1
+
+# ── UTILITIES ─────────────────────────────────────────────────
+# tqdm: Progress bars (used internally by Whisper download)
+tqdm>=4.65.0
