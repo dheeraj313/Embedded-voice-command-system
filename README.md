@@ -1,10 +1,10 @@
 Embedded Voice Command System:
 
-[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Whisper](https://img.shields.io/badge/OpenAI-Whisper-412991?style=for-the-badge&logo=openai&logoColor=white)](https://github.com/openai/whisper)
-[![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-3%2F4-C51A4A?style=for-the-badge&logo=raspberry-pi&logoColor=white)](https://raspberrypi.org)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi-red)
+![Accuracy](https://img.shields.io/badge/Accuracy-75%25-yellow)
+![Tests](https://img.shields.io/badge/Tests-42%20passing-brightgreen)
 
 End-to-end embedded voice command recognition system that processes real-time Hindi speech to control physical hardware peripherals (LED, DC Motor) on a Raspberry Pi — achieving ~75% command recognition accuracy.
 
@@ -20,7 +20,6 @@ End-to-end embedded voice command recognition system that processes real-time Hi
 - [Running the Project](#-running-the-project)
 - [Supported Commands](#-supported-commands)
 - [Running Tests](#-running-tests)
-- [Interview Q&A](#-interview-qa)
 - [Future Improvements](#-future-improvements)
 
 ---
@@ -170,7 +169,7 @@ winget install ffmpeg
 
 **Step 2: Clone and set up the project**
 ```bash
-git clone https://github.com/yourusername/embedded-voice-command-system.git
+git clone https://github.com/dheeraj313/Embedded-voice-command-system
 cd embedded-voice-command-system
 
 # Create a virtual environment (keeps dependencies isolated)
@@ -198,7 +197,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install -y python3-pip python3-venv portaudio19-dev ffmpeg
 
 # Clone the project
-git clone https://github.com/yourusername/embedded-voice-command-system.git
+git clone https://github.com/dheeraj313/Embedded-voice-command-system
 cd embedded-voice-command-system
 
 # Create virtual environment
