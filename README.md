@@ -12,12 +12,7 @@
 > OpenAI Whisper locally on constrained hardware to control physical GPIO
 > devices with ~75% command recognition accuracy.
 
-## Demo
 
-*Demo video coming soon — system controls LED and DC motor via Hindi
-voice commands running fully offline on Raspberry Pi.*
-
----
 
 ## Table of Contents
 
